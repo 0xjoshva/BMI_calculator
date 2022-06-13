@@ -48,7 +48,7 @@ table {
 
 h1{
     /* font-family: 'Monument Extended', sans-serif; */
-                                                                        font-family: 'Gigantic FS', sans-serif;
+    font-family: 'Gigantic FS', sans-serif;
                                                 
     font-weight: 900;
                                                 
@@ -60,6 +60,7 @@ border-radius: 20px 20px;
 /* background-color: #1DB954 ; */
 background: rgb(29,185,84);
 background: linear-gradient(143deg, rgba(29,185,84,1) 35%, rgba(16,112,0,1) 100%);
+transition: all 0.1s;
 }
 
 #calculator{
@@ -83,7 +84,7 @@ background: linear-gradient(143deg, rgba(29,185,84,1) 35%, rgba(16,112,0,1) 100%
 
 
 .slidecontainer {
-  width: 50%;
+  width: 500px;
 }
 
 .slider {
@@ -93,7 +94,7 @@ background: linear-gradient(143deg, rgba(29,185,84,1) 35%, rgba(16,112,0,1) 100%
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
-  opacity: 0.7;
+  opacity: 1;
 
 }
 
@@ -134,9 +135,14 @@ background: linear-gradient(143deg, rgba(29,185,84,1) 35%, rgba(16,112,0,1) 100%
   transition: all 0.4s;
 }
 
-.button:hover{
+#submit:hover{
     background-color: #1db954a4;
 }
+
+#clear:hover{
+    background-color: rgba(128, 128, 128, 0.671);
+}
+
 #submit{
       background-color: #1DB954;
 }
@@ -189,4 +195,8 @@ input[type=text] {
 
 input[type=text]:focus {
   border: 3px solid #555;
+}
+
+#unit{
+  font-size: x-small;
 }

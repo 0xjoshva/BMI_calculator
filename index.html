@@ -14,20 +14,20 @@
   <body>
     <section id="calculator">
          <h1 class="text-white pt-5 text-center"><span class="text-black">BMI</span> Calculator</h1>
-    <div id= "block">
+    <div id= "block" class="justify-content-start align-items-center">
         <div class="row">
-        <div class="col">
+        <div class="col-auto">
 <form>
-    <div class="row">
+    <div class="row justify-content-center">
 <!-- age -->
-<div class="col">
+<div class="col-auto">
 <input type="text" placeholder="age">
 </div>   
-<div class="col">
+<div class="col-auto">
 <!-- weight -->
 <input type="text" placeholder="weight"> 
 </div>
-<div class="col">
+<div class="col-auto">
 <!-- radio buttons -->
 <label for="male" class="text-white"><input type="radio" name="gender" value="male" class="radio text-white">.  Male</label>
 <label for="female" class="text-white px-5"><input type="radio" name="gender" value="female" class="radio text-white">.  Female</label>
@@ -37,7 +37,7 @@
 </form>
 </div>
  
-<div class="col">
+<div class="col-auto slider-div">
     <!-- slider -->
     <div class="slidecontainer">
       <input
@@ -49,10 +49,10 @@
         id="myRange"
       /></div>
       <!-- units -->
-      <p class="text-white"><span id="demo"></span> cm</p>
+      <p class="text-white"><span id="demo"></span> <span id="unit">cm</span></p>
       </div>
-<div class="col"></div>
-<div> 
+<div class="col-auto"></div>
+<div class="justify-content-center"> 
 <!-- submit -->
 <button type="submit" class="button" id="submit">SUBMIT</button>
 <!-- clear button -->
