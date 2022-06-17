@@ -13,32 +13,32 @@
 </head>
   <body>
     <section id="calculator">
-         <h1 class="text-white pt-5 text-center"><span class="text-black">BMI</span> Calculator</h1>
-    <div id= "block" class="justify-content-start align-items-center">
-        <div class="row">
-        <div class="col-auto">
-<form>
-    <div class="row align-items-start">
-<!-- age -->
-<div class="col-auto">
-<input type="text" placeholder="age">
-</div>   
-<div class="col-auto">
-<!-- weight -->
-<input type="text" placeholder="weight"> 
-</div>
-<div class="col-auto pt-4">
-<!-- radio buttons -->
-<label for="male" class="text-white "><input type="radio" name="gender" value="male" class="radio text-white">.  Male</label>
-<label for="female" class="text-white px-5"><input type="radio" name="gender" value="female" class="radio text-white">.  Female</label>
-</div>
+<h1 class="text-white pt-5 text-center " ><span class="text-black" id="BMI-header">BMI</span> <span id="calc-header"> Calculator</span></h1>
+<div id= "block">
+<div class="container">
+<!-- height -->
+<input type="text" placeholder="height(cm)" id="height">
+  
 
+<!-- weight -->
+<input type="text" placeholder="weight(kg)" id="weight"> 
+
+
+<!-- radio buttons -->
+<label for="male" class="text-white pt-2"><input type="radio" name="gender" value="male" class="radio text-white">.  Male</label>
+
+
+<label for="female" class="text-white px-5"><input type="radio" name="gender" value="female" class="radio text-white">.  Female</label>
+
+<div class="pt-5">
+<button type="submit" class="button" id="submit" onclick="calculate()">SUBMIT</button>
+<!-- clear button -->
+<button class="button" id="clear"> CLEAR</button>
 </div>
-</form>
 </div>
- 
+</section>
+<!--  
 <div class="col-auto slider-div pt-5">
-    <!-- slider -->
     <div class="slidecontainer">
       <input
         type="range"
@@ -48,18 +48,13 @@
         class="slider"
         id="myRange"
       /></div>
-      <!-- units -->
       <p class="text-white"><span id="demo"></span> <span id="unit">cm</span></p>
       </div>
 <div class="col-auto"></div>
 <div class="justify-content-center"> 
 <!-- submit -->
-<button type="submit" class="button" id="submit">SUBMIT</button>
-<!-- clear button -->
-<button class="button" id="clear"> CLEAR</button>
-</div>  
-</div>
-</section>
+
+
 
     <script src="/script.js"></script>
   </body>
